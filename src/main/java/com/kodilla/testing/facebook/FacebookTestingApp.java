@@ -17,7 +17,7 @@ public class FacebookTestingApp {
         WebDriver driver = WebDriverConfig.getDriver(WebDriverConfig.CHROME);
         driver.get("https://www.facebook.com");
 
-        while (!driver.findElement(By.xpath(XPATH_WAIT_FOR)).isDisplayed()) ;
+        while (!driver.findElement(By.xpath(XPATH_WAIT_FOR)).isDisplayed());
 
         WebElement selectComboDay = driver.findElement(By.xpath(XPATH_SELECT_DAY));
         Select selectDay = new Select(selectComboDay);
